@@ -98,7 +98,7 @@ class Library{
 
 }
 
-public class Main {
+public class booksCenter {
     public static void main(String[] args) {
         //creating a library Assistant
         Library obj = new Library();
