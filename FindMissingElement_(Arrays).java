@@ -1,4 +1,5 @@
-                                        //Logic
+                                       //Find the missing element in first n natural numbers array                                    
+                                                               //Logic
 //To find missing one keep subtracting the remaining elements in the array so we would be ended-up
 // with the missing element
 class Main{
