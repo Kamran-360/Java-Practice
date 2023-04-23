@@ -1,3 +1,5 @@
+//Take two pointer one for 0 check (In this case int j = 0) another one concerns for non zero check (int i = 0) when one points to zero and the other to non zero,"SWAP" them.Other wise keep
+//moving them but if 0 check pointer pointing zero stay there untill non zero check pointer finds the non zero one otherwise keep moving the jth pointer too.....
 class Main{
     static void moveZerostoLeft(int[] arr){
         int j =0;
