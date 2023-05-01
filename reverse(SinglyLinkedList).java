@@ -62,11 +62,14 @@ class SinglyLinkedList{
     }
 }
 
-//Still Stuck No worries (READ THIS)
+                                                              //Still Stuck No worries (READ THIS)
 //Note 1 : consider a linked-list 10 --> 3 --> null now reverse it using reverseTheList() func
 // * At 1st iteration next pointer will be containing 3 --> null and current pointer will be containing 10 --> 3 --> null
-// as previous pointer default value is null so current.next = prev ; will be null means 10 --> null and as
-// we are storing it back to the previous pointer again so prev will be 10 --> null,and then we are making
-// current = next so now current will be now 3 --> null
+//   as previous pointer default value is null so current.next = prev ; will be null means 10 --> null and as
+//   we are storing it back to the previous pointer again so prev will be 10 --> null,and then we are making
+//   current = next so now current will be now 3 --> null
 // * At 2nd iteration next will be null and current will be 3 --> null and previous will be 3 --> 10 --> null
 // * As current reaches to null finally prev containing the reverse list 3 --> 10 --> null
+// * Remember head has been corrupted and prev containing the clean reverse list so donot forget to make head = prev in the end.Happy Coding!
+//   changing references doesnt effect the list but breaking their links do..... i.e current = current.next would not effect/corrupt the original listin this case head
+//   but current.next = tosomeobject; would do effect because you are now interacting with the bounding of the list 
