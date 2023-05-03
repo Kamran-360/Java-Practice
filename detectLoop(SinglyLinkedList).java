@@ -24,9 +24,9 @@ class SinglyLinkedList{
         //Floyd's Cycle Detection Algorithm
      ListNode slowptr = head;
      ListNode fastptr = head;
-     while (slowptr!=null && fastptr!=null){
-         slowptr = slowptr.next;
+     while (fastptr!=null && fastptr.next!=null){
          fastptr = fastptr.next.next;
+         slowptr = slowptr.next;
          if(slowptr == fastptr){
              return true;
          }
